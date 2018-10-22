@@ -14,6 +14,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.5.RELEASE</version>
+		<!-- <version>1.5.3.RELEASE</version> -->
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -22,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Finchley.SR1</spring-cloud.version>
+		<!-- <spring-cloud.version>Edgware.SR4</spring-cloud.version> -->
 	</properties>
 
 	<dependencies>
@@ -29,7 +31,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -62,5 +63,12 @@
 		<module>mars-eureka-service</module>
 		<module>mars-eureka-provider</module>
 		<module>mars-eureka-consumer</module>
+		<module>mars-kevin-simple-server</module>
+		<module>mars-kevin-simple-provider</module>
+		<module>mars-kevin-simple-consumer</module>
+		<module>mars-kevin-ha-server</module>
+		<module>mars-kevin-ha-provider</module>
+		<module>mars-kevin-ha-consumer</module>
+		<module>mars-kevin-simple-auth-server</module>
 	</modules>
 </project>
