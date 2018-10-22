@@ -1,0 +1,10 @@
+server:
+    port: 8764
+#port: 8764
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://Kevin:Kevin2018@localhost:8761/eureka/
+spring:
+    application:
+        name: eureka-consumer

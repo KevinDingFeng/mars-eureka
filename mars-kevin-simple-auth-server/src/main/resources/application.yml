@@ -9,5 +9,17 @@ eureka:
         serviceUrl:
             defaultZone: http://Kevin:Kevin2018@${eureka.instance.hostname}:${server.port}/eureka/
 spring:
+    security:
+#        basic:
+#            enabled: true
+    #出现黄色的警告信息，表示该配置不被官方jar包认识，所以配置加入不到具体的代码中
+        user:
+            name: Kevin
+            password: Kevin2018
+    #账号默认是user，密码就是一个随机值，该值会在启动的时候打印出来。
     application:
         name: eureka-service
+#security:
+#    basic:
+#        enabled: true
+#目前测试发现 boot 2.0 版本不需要该配置

@@ -1,0 +1,2 @@
+eureka server 添加了 boot security 组件，并正确配置 user:name & password 后，可以启动并登录成功。
+eureka client 在 url 中添加 name:password@ 没有注册成功，原因未知

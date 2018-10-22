@@ -70,5 +70,7 @@
 		<module>mars-kevin-ha-provider</module>
 		<module>mars-kevin-ha-consumer</module>
 		<module>mars-kevin-simple-auth-server</module>
+		<module>mars-kevin-simple-auth-provider</module>
+		<module>mars-kevin-simple-auth-consumer</module>
 	</modules>
 </project>
