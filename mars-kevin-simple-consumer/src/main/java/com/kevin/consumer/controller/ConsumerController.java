@@ -60,13 +60,13 @@ public class ConsumerController {
 	}
 
 	// post 方法，参数分几类： 普通类型和字符串、对象、数组、集合
-	@RequestMapping(value = "/ribbon1_post", method = RequestMethod.POST)
+	@RequestMapping(value = "/ribbon1_post", method = RequestMethod.GET)
 	public String ribbonPost1(HttpServletRequest req) {
 		System.out.println("provider service " + req.getLocalPort());
 		return hiService.ribbonPost1(2L, "Kevin");
 	}
 
-	@RequestMapping(value = "/ribbon2_post", method = RequestMethod.POST)
+	@RequestMapping(value = "/ribbon2_post", method = RequestMethod.GET)
 	public SysUser ribbonPost2(HttpServletRequest req) {
 		System.out.println("provider service " + req.getLocalPort());
 		SysUser sysUser = new SysUser();
@@ -75,14 +75,14 @@ public class ConsumerController {
 		return hiService.ribbonPost2(sysUser);
 	}
 
-	@RequestMapping(value = "/ribbon3_post", method = RequestMethod.POST)
+	@RequestMapping(value = "/ribbon3_post", method = RequestMethod.GET)
 	public String[] ribbonPost3(HttpServletRequest req) {
 		System.out.println("provider service " + req.getLocalPort());
 		String[] names = {"Kevin1", "Kevin2", "Kevin3"};
 		return hiService.ribbonPost3(names);
 	}
 
-	@RequestMapping(value = "/ribbon4_post", method = RequestMethod.POST)
+	@RequestMapping(value = "/ribbon4_post", method = RequestMethod.GET)
 	public List<String> ribbonPost4(HttpServletRequest req) {
 		System.out.println("provider service " + req.getLocalPort());
 		List<String> names = new ArrayList<>();
