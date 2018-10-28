@@ -37,6 +37,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.32</version>
+        </dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -74,5 +80,6 @@
 		<module>mars-kevin-simple-auth-provider</module>
 		<module>mars-kevin-simple-auth-consumer</module>
 		<module>mars-eureka-common</module>
+		<module>mars-kevin-simple-feign-consumer</module>
 	</modules>
 </project>
