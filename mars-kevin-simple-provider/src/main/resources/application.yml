@@ -1,11 +1,12 @@
-server:
-  port: 8763
-#port: 8762
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-      
-spring:
-  application:
-    name: eureka-provider
+#开发环境
+spring: 
+   profiles: 
+      active: dev2
+#测试环境
+#spring: 
+#   profiles: 
+#      active: test
+#生产环境
+#spring: 
+#   profiles: 
+#      active: prod
