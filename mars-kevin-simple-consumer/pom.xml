@@ -16,5 +16,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>com.kevin</groupId>
+            <artifactId>mars-eureka-common</artifactId>
+            <version>${mars.version}</version>
+        </dependency>
 	</dependencies>
 </project>

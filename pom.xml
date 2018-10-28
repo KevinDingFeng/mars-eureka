@@ -24,6 +24,7 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Finchley.SR1</spring-cloud.version>
 		<!-- <spring-cloud.version>Edgware.SR4</spring-cloud.version> -->
+		<mars.version>0.0.1-SNAPSHOT</mars.version>
 	</properties>
 
 	<dependencies>
@@ -72,5 +73,6 @@
 		<module>mars-kevin-simple-auth-server</module>
 		<module>mars-kevin-simple-auth-provider</module>
 		<module>mars-kevin-simple-auth-consumer</module>
+		<module>mars-eureka-common</module>
 	</modules>
 </project>
