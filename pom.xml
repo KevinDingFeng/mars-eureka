@@ -81,5 +81,7 @@
 		<module>mars-kevin-simple-auth-consumer</module>
 		<module>mars-eureka-common</module>
 		<module>mars-kevin-simple-feign-consumer</module>
+		<module>mars-kevin-simple-consumer-hystrix</module>
+		<module>mars-kevin-simple-feign-consumer-hystrix</module>
 	</modules>
 </project>
